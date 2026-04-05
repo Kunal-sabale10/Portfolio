@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
@@ -21,7 +23,8 @@ export const RecentProjects = () => {
               className="flex h-[32rem] w-[90vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
             >
               <PinContainer title="Visit" href={link}>
-                {/* Background container */}
+                
+                {/* Background ONLY */}
                 <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px]">
                   <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                     <Image
@@ -43,10 +46,8 @@ export const RecentProjects = () => {
                   {des}
                 </p>
 
-                {/* Bottom section */}
+                {/* Bottom */}
                 <div className="mb-3 mt-7 flex items-center justify-between">
-                  
-                  {/* Tech icons */}
                   <div className="flex items-center">
                     {iconLists.map((icon, i) => (
                       <div
@@ -67,7 +68,6 @@ export const RecentProjects = () => {
                     ))}
                   </div>
 
-                  {/* Source link */}
                   <div className="flex items-center justify-center">
                     <Link
                       href={sourceCode}
