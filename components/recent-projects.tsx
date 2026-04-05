@@ -16,7 +16,7 @@ export const RecentProjects = () => {
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
         {projects.map(
-          ({ id, des, iconLists, img, link, sourceCode, title }) => (
+          ({ id, des, iconLists,  link, sourceCode, title }) => (
             <div
               key={id}
               className="flex h-[32rem] w-[90vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
@@ -28,14 +28,14 @@ export const RecentProjects = () => {
                       height={330}
                       width={552}
                       src="/bg.png"
-                      alt="bg-img"
+                     
                     />
                   </div>
 
                   <Image
                     height={300}
                     width={464}
-                    src={img}
+                   
                     alt={title}
                     className="absolute bottom-0 z-10"
                   />
