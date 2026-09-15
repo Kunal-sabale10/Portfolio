@@ -9,11 +9,11 @@
     "lint": "eslint ."
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Kunal Sabale",
+    "email": "kunalsabale89@gmail.com",
+    "url": "https://github.com/Kunal-sabale10"
   },
-  "description": "Modern & Minimalist Next.js Portfolio.",
+  "description": "Modern & Minimalist Next.js Developer Portfolio of Kunal Sabale.",
   "keywords": [
     "reactjs",
     "nextjs",
@@ -57,23 +57,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/next-portfolio.git"
+    "url": "https://github.com/Kunal-sabale10/Portfolio.git"
   },
-  "homepage": "https://github.com/sanidhyy/next-portfolio#readme",
+  "homepage": "https://portfolio-5sjd.vercel.app",
   "bugs": {
-    "url": "https://github.com/sanidhyy/next-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
+    "url": "https://github.com/Kunal-sabale10/Portfolio/issues",
+    "email": "kunalsabale89@gmail.com"
   },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
