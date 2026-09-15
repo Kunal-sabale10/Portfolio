@@ -25,7 +25,7 @@ export const Footer = () => {
         </h1>
 
         <p className="my-5 text-center text-white-200 md:mt-10">
-          Reach out to me today and let&apos;s discuss how I can help your
+          Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
 
@@ -48,12 +48,12 @@ export const Footer = () => {
         <p className="text-sm font-light md:text-base md:font-normal">
           Copyright &copy; {new Date().getFullYear()}{" "}
           <Link
-            href="https://sanidhy.me"
+            href={links.sourceCode}
             target="_blank"
             rel="noreferrer noopener"
             className="text-purple"
           >
-            kunal
+            {links.ownerName}
           </Link>{" "}
           |{" "}
           <Link href={links.sourceCode} className="underline">
