@@ -37,10 +37,10 @@ export const Hero = () => {
           />
 
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Hi, I&apos;m {links.ownerName}, A software devloper | full stack developer based in India.
+            Hi, I&apos;m {links.ownerName}, a Software Developer & Full Stack Engineer based in India.
           </p>
 
-          <Link href="#about" className="md:mt-10">
+          <Link href="#projects" className="md:mt-10">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
