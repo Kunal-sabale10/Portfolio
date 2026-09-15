@@ -7,9 +7,14 @@ export const links = {
 } as const;
 
 export const siteConfig: Metadata = {
-  title: `${links.ownerName}'s Portfolio`,
-  description: "Modern & Minimalist Next.js Portfolio.",
+  metadataBase: new URL("https://portfolio-5sjd.vercel.app"),
+  title: `${links.ownerName} Sabale | Full Stack Developer Portfolio`,
+  description:
+    "Modern & Minimalist Next.js Developer Portfolio of Kunal Sabale showcasing full-stack projects, creative 3D animations, and web engineering.",
   keywords: [
+    "kunal sabale",
+    "kunal portfolio",
+    "full stack developer",
     "reactjs",
     "nextjs",
     "vercel",
@@ -17,40 +22,33 @@ export const siteConfig: Metadata = {
     "aceternity",
     "aceternity-ui",
     "shadcn",
-    "shadcn-ui",
-    "radix-ui",
-    "cn",
-    "clsx",
     "modern-portfolio",
-    "portfolio",
     "3d-portfolio",
-    "animated-portfolio",
-    "nextjs-portfolio",
-    "react-portfolio",
-    "react-three-fiber",
-    "three.js",
-    "animated-website",
-    "framer",
     "framer-motion",
-    "three",
-    "react-icons",
-    "lucide-react",
-    "next-themes",
-    "postcss",
-    "prettier",
-    "react-dom",
+    "three.js",
     "tailwindcss",
-    "tailwindcss-animate",
-    "ui/ux",
-    "js",
-    "javascript",
     "typescript",
-    "eslint",
-    "html",
-    "css",
-  ] as Array<string>,
-  authors: {
-    name: links.ownerName,
-    url: "https://github.com/Kunal-sabale10",
+  ],
+  authors: [
+    {
+      name: `${links.ownerName} Sabale`,
+      url: "https://github.com/Kunal-sabale10",
+    },
+  ],
+  creator: `${links.ownerName} Sabale`,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://portfolio-5sjd.vercel.app",
+    title: `${links.ownerName} Sabale | Full Stack Developer Portfolio`,
+    description:
+      "Modern & Minimalist Next.js Developer Portfolio of Kunal Sabale showcasing full-stack projects, creative 3D animations, and web engineering.",
+    siteName: `${links.ownerName} Sabale Portfolio`,
   },
-} as const;
+  twitter: {
+    card: "summary_large_image",
+    title: `${links.ownerName} Sabale | Full Stack Developer Portfolio`,
+    description:
+      "Modern & Minimalist Next.js Developer Portfolio of Kunal Sabale showcasing full-stack projects, creative 3D animations, and web engineering.",
+  },
+};
