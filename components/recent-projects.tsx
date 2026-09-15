@@ -45,12 +45,15 @@ export const RecentProjects = () => {
                 </div>
 
                 {/* Title */}
-                <h1 className="line-clamp-1 text-base font-bold md:text-xl lg:text-2xl">
+                <h1 className="line-clamp-1 text-base font-bold text-white md:text-xl lg:text-2xl">
                   {title}
                 </h1>
 
                 {/* Description */}
-                <p className="line-clamp-2 text-sm font-light lg:text-xl lg:font-normal">
+                <p
+                  className="line-clamp-2 text-sm font-light lg:text-base lg:font-normal"
+                  style={{ color: "#BEC1DD", margin: "1vh 0" }}
+                >
                   {des}
                 </p>
 
@@ -81,7 +84,7 @@ export const RecentProjects = () => {
                       href={sourceCode}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="flex text-sm text-purple md:text-xs lg:text-xl"
+                      className="flex text-sm text-purple transition-colors hover:underline md:text-xs lg:text-base"
                     >
                       Source Code
                     </Link>
