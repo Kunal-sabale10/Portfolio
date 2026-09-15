@@ -17,23 +17,31 @@ export const RecentProjects = () => {
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
         {projects.map(
-          ({ id, des, iconLists, link, sourceCode, title }) => (
+          ({ id, des, iconLists, img, link, sourceCode, title }) => (
             <div
               key={id}
               className="flex h-[32rem] w-[90vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
             >
               <PinContainer title="Visit" href={link}>
                 
-                {/* Background ONLY */}
-                <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px]">
-                  <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
+                {/* Background & Banner Showcase */}
+                <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden rounded-2xl sm:h-[40vh] sm:w-[570px] lg:rounded-3xl bg-[#13162d]">
+                  <Image
+                    fill
+                    src="/bg.png"
+                    alt="project background"
+                    className="object-cover opacity-40 pointer-events-none"
+                  />
+                  {img && (
                     <Image
-                      height={330}
-                      width={552}
-                      src="/bg.png"
-                      alt="project background"
+                      fill
+                      src={img}
+                      alt={title}
+                      className="z-10 object-cover object-top transition-transform duration-500 group-hover/pin:scale-105"
+                      sizes="(max-width: 640px) 80vw, 570px"
+                      priority={id <= 2}
                     />
-                  </div>
+                  )}
                 </div>
 
                 {/* Title */}

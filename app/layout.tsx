@@ -19,7 +19,12 @@ export const metadata: Metadata = siteConfig;
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="dark"
+      style={{ colorScheme: "dark" }}
+    >
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           {children}
